@@ -141,6 +141,18 @@ config RTL8192C_COMMON
 	depends on RTL8192CE || RTL8192CU
 	default y
 
+config RTL8812AU
+        tristate "Realtek 8812AU USB WiFi"
+        depends on RTLWIFI && USB
+        ---help---
+          RTL8812AU driver with injection support
+
+config RTL8192EU
+        tristate "Realtek 8192EU USB WiFi"
+        depends on RTLWIFI && USB
+        ---help---
+          RTL8192EU driver with injection support
+
 config RTL8723_COMMON
 	tristate
 	depends on RTL8723AE || RTL8723BE
